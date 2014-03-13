@@ -5,6 +5,8 @@ Project("{2F6B85D9-44B9-E9F6-892E-778FCB44410A}") = "projetoUnity", "Assembly-CS
 EndProject
 Project("{2F6B85D9-44B9-E9F6-892E-778FCB44410A}") = "projetoUnity", "Assembly-CSharp.csproj", "{1D37F72B-CE25-DCBF-4D06-99BB16257F2E}"
 EndProject
+Project("{2F6B85D9-44B9-E9F6-892E-778FCB44410A}") = "projetoUnity", "Assembly-CSharp-Editor.csproj", "{73C3CADA-4C57-44DF-E583-72E2834B1DF4}"
+EndProject
 Project("{2F6B85D9-44B9-E9F6-892E-778FCB44410A}") = "projetoUnity", "Assembly-UnityScript-firstpass.unityproj", "{DEBFA3AF-74CD-9E81-DFE6-07EA43022096}"
 EndProject
 Project("{2F6B85D9-44B9-E9F6-892E-778FCB44410A}") = "projetoUnity", "Assembly-UnityScript.unityproj", "{4BBD51A6-E161-9CFB-ACA8-7338A9C7A20A}"
@@ -23,6 +25,10 @@ Global
 		{1D37F72B-CE25-DCBF-4D06-99BB16257F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D37F72B-CE25-DCBF-4D06-99BB16257F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D37F72B-CE25-DCBF-4D06-99BB16257F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C3CADA-4C57-44DF-E583-72E2834B1DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C3CADA-4C57-44DF-E583-72E2834B1DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C3CADA-4C57-44DF-E583-72E2834B1DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C3CADA-4C57-44DF-E583-72E2834B1DF4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEBFA3AF-74CD-9E81-DFE6-07EA43022096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEBFA3AF-74CD-9E81-DFE6-07EA43022096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEBFA3AF-74CD-9E81-DFE6-07EA43022096}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,8 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-																					GlobalSection(MonoDevelopProperties) = preSolution
+																																								GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																												GlobalSection(MonoDevelopProperties) = preSolution
 																				GlobalSection(MonoDevelopProperties) = preSolution
