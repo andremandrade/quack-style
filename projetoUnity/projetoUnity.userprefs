@@ -6,7 +6,7 @@
       <File FileName="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" Line="1" Column="1" />
       <File FileName="Assets\Scripts\assets\FX-Water Complex.shader" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player\Pato.cs" Line="13" Column="30" />
-      <File FileName="Assets\Scripts\Player\MovimentoPlayer.cs" Line="30" Column="54" />
+      <File FileName="Assets\Scripts\Player\MovimentoPlayer.cs" Line="52" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
