@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class MovimentoPlayer : MonoBehaviour {
-	
+
+
 	public float aceleracao = 0.9f;
 	public float desAceleracao = 0.2f;
 	public float gravidade = 0.9f;
@@ -10,26 +11,33 @@ public class MovimentoPlayer : MonoBehaviour {
 	public float maxVelocidadeX = 3;
 	public float pontoAguaY = 0.5f;	
 	public float forcaAgua = 2f;
+	public float distanciaMaxCam;
+	public bool emBaixoDaAgua;
+	public bool naSuperficie;
 
 	private CharacterController jogador;
+	public Transform cameraS;
 	private float velocidadeX;
 	private float velocidadeY;
 	private float anguloX;
 	private float anguloY;
-
-
+	private Vector3 deltaDisCam;
+	private Vector3 moveDirection = Vector3.zero;
 	
 	void Start () {
 		jogador = GetComponent<CharacterController>();
+		deltaDisCam = cameraS.position-jogador.transform.position;
+		distanciaMaxCam = 3;
 	}
 
-	private Vector3 moveDirection = Vector3.zero;
-	
 	void Update () {
-		bool emBaixoDaAgua = jogador.transform.position.y < pontoAguaY;
-		bool naSuperficie = jogador.transform.position.y == pontoAguaY;
+		emBaixoDaAgua= jogador.transform.position.y < pontoAguaY;
+		naSuperficie = jogador.transform.position.y <= (pontoAguaY+0.5f) &&
+			jogador.transform.position.y >= (pontoAguaY-0.5f);
 
-		anguloX = 90;
+		cameraS.position = jogador.transform.position + deltaDisCam;
+
+		anguloY = 90;
 
 		if(Input.GetAxis("Horizontal") > 0){
 			velocidadeX += aceleracao;
@@ -49,7 +57,7 @@ public class MovimentoPlayer : MonoBehaviour {
 		if(velocidadeY <= gravidade && emBaixoDaAgua){
 			velocidadeY += forcaAgua;
 			if(naSuperficie){
-				velocidadeY = 0;
+				velocidadeY -= 1;
 			}
 		}
 		
