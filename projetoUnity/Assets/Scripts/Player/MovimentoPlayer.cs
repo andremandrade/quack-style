@@ -14,13 +14,15 @@ public class MovimentoPlayer : MonoBehaviour {
 	public float distanciaMaxCam;
 	public bool emBaixoDaAgua;
 	public bool naSuperficie;
+	public int totalDoces=0;
+	public int maxDoces=3;
 
 	private CharacterController jogador;
 	public Transform cameraS;
 	private float velocidadeX;
 	private float velocidadeY;
 	private float anguloX;
-	private float anguloY;
+	private float anguloY = 90;
 	private Vector3 deltaDisCam;
 	private Vector3 moveDirection = Vector3.zero;
 	
@@ -36,8 +38,6 @@ public class MovimentoPlayer : MonoBehaviour {
 			jogador.transform.position.y >= (pontoAguaY-0.5f);
 
 		cameraS.position = jogador.transform.position + deltaDisCam;
-
-		anguloY = 90;
 
 		if(Input.GetAxis("Horizontal") > 0){
 			velocidadeX += aceleracao;
@@ -80,5 +80,13 @@ public class MovimentoPlayer : MonoBehaviour {
 
 		jogador.transform.rotation = Quaternion.Euler( new Vector3(anguloX, anguloY,0));
 		jogador.Move(moveDirection );
+	}
+
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+		if (hit.transform.tag == "doce") {
+			totalDoces++;
+			audio.Play();
+			Destroy(hit.gameObject);
+		}
 	}
 }

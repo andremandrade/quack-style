@@ -1,12 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\MovimentoPlayer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\Principal.cs">
     <Files>
+      <File FileName="Assets\Scripts\GUI\vitoria.cs" Line="15" Column="24" />
+      <File FileName="Assets\Scripts\GUI\Som.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GUI\Menu.cs" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" Line="1" Column="1" />
       <File FileName="Assets\Scripts\assets\FX-Water Complex.shader" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\Pato.cs" Line="13" Column="30" />
-      <File FileName="Assets\Scripts\Player\MovimentoPlayer.cs" Line="52" Column="4" />
+      <File FileName="Assets\Scripts\Player\Pato.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\MovimentoPlayer.cs" Line="88" Column="17" />
+      <File FileName="Assets\Scripts\GUI\Fases.cs" Line="17" Column="3" />
+      <File FileName="Assets\NGUI\Scripts\UI\UISprite.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Scripts\Interaction\UIButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\Fase1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\Fase2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\Fase3.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\Principal.cs" Line="15" Column="14" />
+      <File FileName="Assets\Scripts\GUI\vitoria.cs" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
